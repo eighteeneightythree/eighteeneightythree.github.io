@@ -45,7 +45,7 @@ $( document ).ready(function() {
 		//display info div on click
 		$(".menu_info").click(function() {
 			$(".content_page:not(.info_page)").css("display", "none");
-			setTimeout(function() {$(".info_page").fadeIn(500)}, 2000)
+			setTimeout(function() {$(".info_page").fadeIn(500)}, 2000);
 		});
 
 		//home page link function
