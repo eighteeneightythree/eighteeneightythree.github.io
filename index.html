@@ -7,29 +7,18 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Tangerine&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript">
-		$( document ).ready(function() {
-        	console.log( "document loaded" );
-    	});
-
-		$( window ).on( "load", function() {
-        	console.log( "window loaded" );
-        	$(".page_body").fadeIn();
-        	window.setTimeout(function() {$(".page_body").fadeOut("slow");}, 1500);
-    	});
-
-	</script>
+	<script src="javascript/overlay-script.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="header">
 			<ul class="navbar">
 				<div class="menu_items_left">
-					<li class="menu_1883"><a href="">1883 by LN</a></li>
+					<li class="menu_1883"><span class="title_1883">1883</span> by LN</li>
 				</div>
 				<div class="menu_items_right">
-					<li class="menu_portfolio"><a href="">Portfolio</a></li>
-					<li class="menu_info"><a href="">Information</a></li>
+					<li class="menu_folio">Portfolio</li>
+					<li class="menu_info" >Information</li>
 				</div>
 			</ul>
 
@@ -40,6 +29,26 @@
 			<p class="welcome">
 				<span class="welcome_1883">1883</span> by Louis Nel
 			</p>
+
+
+		</div>
+
+		<div class="home_page content_page">
+			<p>Home page and all that...</p>
+		</div>
+
+		<div class="folio_page content_page">
+			<p>Portfolio to come...</p>
+		</div>
+
+		<div class="info_page content_page">
+			<p class="say_hello">Say Hello</p>
+		</br>
+			<p class="info_heading">Louis Nel</p>
+			<ul>
+				<li>020 41104594</li>
+				<li>louis.nel@1883.co.nz</li>
+			</ul>
 
 
 		</div>
