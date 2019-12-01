@@ -1,5 +1,5 @@
 var colorArray = [
-	"#7E9772",
+	"#A7C997",
 	"#BDDFBC",
 	"#FAB89A",
 	"#FCC96C",
