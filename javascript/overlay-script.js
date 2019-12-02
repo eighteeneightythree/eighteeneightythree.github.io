@@ -73,3 +73,68 @@ $( document ).ready(function() {
 		});
 });
 
+$(document).ready(function() {
+		var items = $("div.item").length;
+		
+		var i = 1;
+
+		$(".gall_right").click(function() {
+			if (i < items) {
+				i++;
+				console.log(i + " <= " + items + ": true");
+				$(".transition_slider").animate({left:"100%"}, 2000, function() {
+					$(".transition_slider").removeAttr("style");
+				});
+				console.log("animation finished");
+				console.log("i + 1 = " + i);
+				setTimeout(function() {
+					$(".placeholder_" + i).addClass("placeholder_show");
+					$("div.item:not(.placeholder_" + i + ")").removeClass("placeholder_show");
+				}, 1000);
+				console.log("remove show on all but placeholder_" + i);
+			} else {
+				console.log(i + " <= " + items + ": false");
+				console.log("restart slides");
+				$(".transition_slider").animate({left:"100%"}, 2000, function() {
+					$(".transition_slider").removeAttr("style");
+				});
+				i = 1;
+				setTimeout(function() {
+					$(".placeholder_" + i).addClass("placeholder_show");
+					$("div.item:not(.placeholder_" + i + ")").removeClass("placeholder_show");
+				}, 1000);
+			}
+		});
+
+		$(".gall_left").click(function() {
+			if (i <= items && i > 1) {
+				i--;
+				console.log(i + " <= " + items + ": true");
+				$(".transition_slider").animate({left:"100%"}, 2000, function() {
+					$(".transition_slider").removeAttr("style");
+				});
+				console.log("animation finished");
+				console.log("i + 1 = " + i);
+				setTimeout(function() {
+					$(".placeholder_" + i).addClass("placeholder_show");
+					$("div.item:not(.placeholder_" + i + ")").removeClass("placeholder_show");
+				}, 1000);
+				console.log("remove show on all but placeholder_" + i);
+			} else {
+				console.log(i + " <= " + items + ": false");
+				console.log("restart slides");
+				$(".transition_slider").animate({left:"100%"}, 2000, function() {
+					$(".transition_slider").removeAttr("style");
+				});
+				i = items;
+				setTimeout(function() {
+					$(".placeholder_" + i).addClass("placeholder_show");
+					$("div.item:not(.placeholder_" + i + ")").removeClass("placeholder_show");
+				}, 1000);
+			}
+		});
+
+
+
+});
+

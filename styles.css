@@ -120,11 +120,15 @@ a:visited {
     display: none; 
     width: 100%; 
     height: 100%; 
-    top: 30%;
-    left: 20%;
+    top: 0;
+    left: 0;
     z-index: -1;
+}
 
-
+.info_wrapper {
+	width: 50%;
+	margin-top: 30%; 
+	margin-left: 25%;
 }
 
 .info_page li {
@@ -143,10 +147,100 @@ a:visited {
     z-index: -1;
 }
 
-.home_page p {
-	margin-top: 30%;
-	margin-left: 20%;
+
+.gallery {
+	width: 100%;
+	height: 60%;
+	margin-top: 25vh;
 }
+
+.gall_left {
+	width: 50%;
+	float: left;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.gall_right {
+	width: 50%;
+	float: right;
+	height: 100%;
+	position: relative;
+	z-index: 2;
+}
+
+.transition_slider {
+	width: 200%;
+	background-color: #f4f4f4;
+	height: inherit;
+	position: absolute;
+	right: 110%;
+}
+
+.item h1 {
+	margin: 20% 0 0 20%;
+	font-family: 'Titillium Web', Arial sans-serif;
+	font-style: normal;
+	font-size: 100%
+}
+
+.custom_hr {
+    width: 50%;
+    height: 1px;
+    font-size: 1px;
+    background-color: #000;
+    line-height: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.placeholder_1 {
+	background-color: #A7C997;
+	height: inherit;
+	width: 80%;
+	margin-left: 10%;
+	position: absolute;
+	display: none;
+}
+
+.placeholder_2 {
+	background-color: #FFAD7A;
+	height: inherit;
+	width: 80%;
+	margin-left: 10%;
+	position: absolute;
+	display: none;
+
+}
+
+.placeholder_3 {
+	background-color: #F1E4E8;
+	height: inherit;
+	width: 80%;
+	margin-left: 10%;
+	position: absolute;
+	display: none;
+
+}
+
+.placeholder_4 {
+	background-color: #CEE5F2;
+	height: inherit;
+	width: 80%;
+	margin-left: 10%;
+	position: absolute;
+	display: none;
+
+}
+
+.placeholder_show {
+	display: block !important;
+}
+
+
+
 
 /* ---------- Folio Page Styles BEGIN ---------- */
 
@@ -161,16 +255,25 @@ a:visited {
     z-index: -1;
 }
 
-.folio_page p {
-	margin-top: 30%;
-	margin-left: 20%;
+.folio_wrapper {
+	width: 50%;
+	margin-top: 30%; 
+	margin-left: 25%;
 }
+
+.folio_page p {
+	margin: 0 auto;
+}
+
+
 
 /* ---------- General Styles BEGIN ---------- */
 
 .content_page p {
 	font-style: italic;
 }
+
+
 
 /* ---------- Footer Styles BEGIN ---------- */
 
@@ -193,3 +296,4 @@ a:visited {
 	text-align: right;
 	margin-right: 30px;
 }
+
