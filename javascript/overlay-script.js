@@ -11,23 +11,25 @@ var colorArray = [
 //pick random colour from array
 var randomItem = colorArray[Math.floor(Math.random()*colorArray.length)];
 
-
-
+function loading_overlay () {
+	$(".page_body").css("background-color", colorArray[Math.floor(Math.random()*colorArray.length)]);
+    setTimeout(function() {$(".page_body").fadeIn(500);}, 200);
+   	setTimeout(function() {$(".page_body").fadeOut("slow");}, 1500); //slow is 600ms
+   	console.log("starting fade");
+   	$(".menu_1883").fadeOut(200)
+	setTimeout(function() {$(".menu_1883").fadeIn("slow")}, 1500);
+};
 
 
 $( document ).ready(function() {
-        	console.log( "document loaded" );
-    	});
+        console.log( "document loaded" );
+    	
+    	$(".page_body").css("background-color", randomItem);
+        $(".page_body").fadeIn();
+       	setTimeout(function() {$(".page_body").fadeOut("slow");}, 1500); //slow is 600ms
+       	setTimeout(function() {$("main").css("display", "block");}, 1500);
+});
 
-
-
-		$( window ).on( "load", function() {
-        	console.log( "window loaded" );
-		console.log(randomItem);
-       	$(".page_body").css("background-color", randomItem);
-        	$(".page_body").fadeIn();
-        	window.setTimeout(function() {$(".page_body").fadeOut("slow");}, 1500);
-    	});
 
 $(document).ready(function(){
 		//when any navbar item is clicked, display overlay with random colour from array
@@ -35,8 +37,9 @@ $(document).ready(function(){
 		$(".navbar li").click(function(){
 			$(".page_body").css("background-color", colorArray[Math.floor(Math.random()*colorArray.length)]);
         	setTimeout(function() {$(".page_body").fadeIn(500);}, 200);
-        	setTimeout(function() {$(".page_body").fadeOut("slow");}, 1500);
+   	    	setTimeout(function() {$(".page_body").fadeOut("slow");}, 1500);
 		});
+
 });
 
 
@@ -44,6 +47,8 @@ $( document ).ready(function() {
 		//info page link function
 		//display info div on click
 		$(".menu_info").click(function() {
+			$(".navbar li:not(.menu_info)").fadeTo(1000, 1);
+			$(".menu_info").fadeTo(1000, 0.5);
 			$(".content_page").fadeOut(200);
 			setTimeout(function() {$(".info_page").fadeIn(500)}, 2000);
 		});
@@ -51,14 +56,18 @@ $( document ).ready(function() {
 		//home page link function
 		//displays home on click
 		$(".menu_1883").click(function() {
+			$(".navbar li").fadeTo(1000, 1);
 			$(".content_page").fadeOut(200);			
 			setTimeout(function() {$(".home_page").fadeIn(500)}, 2000);
+
 			
 		});
 
 		//folio page link fuction
 		//display folio page on click
 		$(".menu_folio").click(function() {
+			$(".navbar li:not(.menu_folio)").fadeTo(1000, 1);
+			$(".menu_folio").fadeTo(1000, 0.5);
 			$(".content_page").fadeOut(200);
 			setTimeout(function() {$(".folio_page").fadeIn(500)}, 2000);
 		});
