@@ -9,7 +9,6 @@
 body {
 	background-color: #f4f4f4;
 	font-family: 'Titillium Web', Arial sans-serif;
-	font-size: 150%;
 }
 
 .container {
@@ -22,6 +21,7 @@ body {
 	width: 100%;
 	position: relative;
 	z-index: 2;
+	font-size: 150%;
 }
 
 
@@ -169,4 +169,26 @@ a:visited {
 
 .content_page p {
 	font-style: italic;
+}
+
+/* ---------- Footer Styles BEGIN ---------- */
+
+.footer {
+
+	position: fixed;
+    width: 100%; 
+    height: auto; 
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 10px
+
+
+}
+
+.footer p {
+
+	font-style: italic;
+	text-align: right;
+	margin-right: 30px;
 }
