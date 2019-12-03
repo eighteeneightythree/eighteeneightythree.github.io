@@ -45,9 +45,17 @@ main {
 	overflow: visible;
 }
 
+.menu_li_left {
+	float: left;
+}
+
 .menu_items_right {
 	float: right;
 	padding: 10px;
+}
+
+.menu_li_right {
+	float: right;
 }
 
 .menu_items_right li {
