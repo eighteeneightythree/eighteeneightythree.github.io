@@ -178,6 +178,12 @@ a:visited {
 	z-index: 2;
 }
 
+.gallery_image {
+	width: auto;
+	float: right;
+	height: 100%;
+}
+
 .transition_slider {
 	width: 200%;
 	background-color: #f4f4f4;
@@ -190,7 +196,14 @@ a:visited {
 	margin: 20% 0 0 20%;
 	font-family: 'Titillium Web', Arial sans-serif;
 	font-style: normal;
-	font-size: 100%
+	font-size: 100%;
+}
+
+.item h2 {
+	margin: 0 0 0 20%;
+	font-family: 'Titillium Web', Arial sans-serif;
+	font-style: normal;
+	font-size: 60%;
 }
 
 .custom_hr {
@@ -205,7 +218,7 @@ a:visited {
 
 
 .placeholder_1 {
-	background-color: #A7C997;
+	background-color: #FFAD7A;
 	height: inherit;
 	width: 80%;
 	margin-left: 10%;
@@ -214,7 +227,7 @@ a:visited {
 }
 
 .placeholder_2 {
-	background-color: #FFAD7A;
+	background-color: #A7C997;
 	height: inherit;
 	width: 80%;
 	margin-left: 10%;
