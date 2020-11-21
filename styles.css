@@ -170,12 +170,29 @@ a:visited {
 	z-index: 2;
 }
 
+.gall_left p {
+	margin-left: 15px;
+}
+
+.gall_left p:hover{
+	text-decoration: underline;
+}
+
 .gall_right {
 	width: 50%;
 	float: right;
 	height: 100%;
 	position: relative;
 	z-index: 2;
+}
+
+.gall_right p {
+	float: right;
+	margin-right: 15px;
+}
+
+.gall_right p:hover {
+	text-decoration: underline;
 }
 
 .gallery_image {
@@ -276,10 +293,24 @@ a:visited {
     z-index: -1;
 }
 
+
+
 .folio_wrapper {
 	width: 50%;
-	margin-top: 30%; 
+	height: 100%;
+	margin-top: 20%; 
 	margin-left: 25%;
+}
+
+.folio_gallery {
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 15px;
+}
+
+.folio_gallery img {
+	object-fit: cover;
 }
 
 .folio_page p {
