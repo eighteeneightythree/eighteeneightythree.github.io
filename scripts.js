@@ -40,7 +40,7 @@ function generateArchiveTable(data) {
         //generate table row from each object in 'data'
         let row = `
         <tr class="archiveTableBody">
-			<td><a href="archive_record.html?item=${data[i].accessionNumber}">${data[i].accessionNumber}</a></td>
+			<td><a href="archive_record?item=${data[i].accessionNumber}">${data[i].accessionNumber}</a></td>
 			<td>${data[i].description}</td>
 			<td>${data[i].media}</td>
 			<td>${data[i].archiveTag}</td>
