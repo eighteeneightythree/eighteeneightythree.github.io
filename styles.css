@@ -1,0 +1,130 @@
+/* Set all margin and padding to 0 */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------- Parental Styles BEGIN ---------- */
+
+body {
+	background-color: #f4f4f4;
+	font-family: "Open Sans", Arial sans-serif;
+}
+
+#container {
+	padding: 40px;
+	height: auto;
+
+}
+
+#page_body {
+	display: none;
+    height: auto;
+	position: relative;
+}
+
+#header {
+	height: auto;
+	position: relative;
+	font-size: 150%;
+	margin-bottom: 40px;
+	display: none;
+}
+
+.italicise {
+	font-style: italic;
+}
+
+/* ---------- Navbar Styles BEGIN ---------- */
+
+.navbar {
+	text-align: center;
+	overflow: auto;
+}
+
+.menu_home {
+	float: left;
+}
+
+.menu_info {
+	float: right;
+    margin-left: 20px;
+}
+
+.menu_archive {
+	float: right;
+    margin-left: 20px;
+}
+
+.navbar li {
+	display: inline-block;
+}
+
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000000;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:visited {
+	color: #000000;
+}
+
+/* ---------- Body Styles BEGIN ---------*/
+
+/* ---------- Working Styles BEGIN ---------- */
+
+/* ---------- Archive Styles BEGIN -----------*/
+
+
+
+#archiveTable th {
+	text-align: left;
+	vertical-align: top;
+	font-weight: 600;
+	padding-right: 10px;
+}
+
+#archiveTable td {
+	text-align: left;
+	padding-right: 10px;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+ #itemTable th {
+	text-align: left;
+	padding-right: 10px;
+	padding-top: 10px;
+ }
+
+ #itemTable td {
+	padding-top: 10px; 
+}
+
+/* ---------- Home Page Styles BEGIN ---------- */
+
+#homeImg1 {
+	width: 100%;
+}
+
+/* ---------- Footer Styles BEGIN ---------- */
+
+#footer {
+	display: none;
+	position: relative;
+    height: auto; 
+    z-index: 10;
+	margin-top: 40px;
+}
+
+#footer p {
+
+	font-style: italic;
+	text-align: right;
+}
