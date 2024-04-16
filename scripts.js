@@ -45,7 +45,6 @@ function generateArchiveTable(data) {
 			<td>${data[i].media}</td>
 			<td>${data[i].archiveTag}</td>
 			<td>${data[i].year}</td>
-			<td>${data[i].collectionCode}</td>
 		</tr>`;
 
         //console.log(row);
