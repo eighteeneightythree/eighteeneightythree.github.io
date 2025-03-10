@@ -109,6 +109,13 @@ a:visited {
 	width: 100%;
 }
 
+/* ---------- Now Page Styles BEGIN ---------- */
+
+.now_page {
+	list-style-position: inside;
+	padding-left: 1em;
+}
+
 /* ---------- Footer Styles BEGIN ---------- */
 
 #footer {
