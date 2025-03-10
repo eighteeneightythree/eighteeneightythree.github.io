@@ -46,14 +46,9 @@ body {
 	float: left;
 }
 
-.menu_info {
+.menu_left {
 	float: right;
-    margin-left: 20px;
-}
-
-.menu_archive {
-	float: right;
-    margin-left: 20px;
+	margin-left: 20px;
 }
 
 .navbar li {
