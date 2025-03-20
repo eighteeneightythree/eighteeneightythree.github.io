@@ -1,3 +1,3 @@
-Arcvhie - Louis Nel
+Archive - Louis Nel
 
-Portfolio and archive under development
+Portfolio and archive under development.
